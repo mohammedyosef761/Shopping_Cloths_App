@@ -1,0 +1,81 @@
+:root {
+    --primaryColor: #f09d51;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+  }
+
+
+header{
+    background:var(--mainGrey);
+    padding: 10px;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content .brand{
+    font-size: 32px;
+    text-decoration: none;
+    color:var(--mainBlack);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li a{
+    color:var(--mainBlack);
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+/* ************form ************ */
+
+/*hero*/
+.section-form{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    text-align: center;
+    background:#697ce9 ;
+    padding:20px;
+}
+
+.section-form h2{
+    font-size:50px;
+    letter-spacing:2px ;
+    color:#055a7b;
+}
+
+.section-form form input{
+font-family:'Oswald', sans-serif; 
+display: block;
+width: 100%;
+margin:5px 0;
+height: 40px;
+padding: 5px;
+border: 1px solid #ddd;
+outline:0;
+
+}
+.section-form form input[type=submit]{
+    font-size: 25px;
+    text-transform: uppercase;
+    height: auto;
+    cursor: pointer;
+}
+.section-form form input[type=submit]:hover{
+    opacity: 0.8;
+}
+
+.mg-r{
+    margin-right: 20px;
+}

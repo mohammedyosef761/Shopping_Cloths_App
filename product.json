@@ -1,0 +1,69 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "queen modern1",
+          "price": 10.99,
+          "image": { "fields": { "file": { "url": "./images/jeans1.webp" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "kingqueen modern2",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "./images/jeans2.webp" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "single queen modern3",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "./images/jeans5.webp" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "twin queen modern4",
+          "price": 22.99,
+          "image": { "fields": { "file": { "url": "./images/9.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "queen modern5",
+          "price": 88.99,
+          "image": { "fields": { "file": { "url": "./images/jeans4.webp" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "dresser  modern6",
+          "price": 32.99,
+          "image": { "fields": { "file": { "url": "./images/jeans3.webp" } } }
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": " modern7",
+          "price": 45.99,
+          "image": { "fields": { "file": { "url": "./images/jeans7.webp" } } }
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "modern8",
+          "price": 33.99,
+          "image": { "fields": { "file": { "url": "./images/jeans4.webp" } } }
+        }
+      }
+    ]
+  }
+  
