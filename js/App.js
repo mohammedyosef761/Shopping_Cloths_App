@@ -86,12 +86,12 @@ displayCart(cart){
      resCart  +=`
 
      <div dir="rtl" class="item-container" >
-     <div class="img-title-parent"style="display:flex;align-items:center;width:33px">
+     <div class="img-title-parent"style="display:flex;align-items:center;width:33px;">
         <img src="${item.image}" alt="">
-        <p class="product-name">${item.title}</p>
+        <p class="product-name title-sm">${item.title}</p>
     </div>
     <div style="display: flex; align-items: center;">
-    <input type="number" value="1" min="1"  class="input-quantity" dir="ltr" id="input-quantity"data-id=${item.id} >
+    <input type="number" value="1" min="1"  class="input-quantity" dir="ltr" id="input-quantity" data-id=${item.id} >
     <p >:Quantity</p>
     
     </div>
@@ -101,7 +101,7 @@ displayCart(cart){
     </div>
     
     
-    <button class="btn btn-secondary"data-id=${item.id}>
+    <button class="btn btn-secondary" data-id=${item.id}>
         Delete
     </button>
 
@@ -178,19 +178,23 @@ console.log("YESSSSSSs");
 }
 
 else if(eo.target.classList.contains('btn-secondary')){
-  let btnPrim=document.querySelector('.btn-prim');
-  console.log(btnPrim);
-   console.log(eo.target);
+  // let btnPrim=document.querySelector('.btn-prim');
+  // console.log(btnPrim);
+   console.log("here",eo.target);
    let id= eo.target.dataset.id;
    console.log(id);
-   console.log(cart);
+   console.log("cart",cart);
    cart =cart.filter(item=> item.id !==id);
+   console.log("cart after",cart)
    objUi.price(cart);
    objUi.displayCart(cart);
    objUi.totalPrieceCart();
    localStorage.setItem('cart',JSON.stringify(cart));
-   BlackScreen.innerHTML = '';
-   BlackScreen.style.transform="translateX(-110vw)";
+   if(cart.length==0){
+    BlackScreen.innerHTML = '';
+    BlackScreen.style.transform="translateX(-110vw)";
+   }
+
 }
 else if(eo.target.classList.contains('btn-prim')){
   
