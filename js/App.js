@@ -51,7 +51,7 @@ class UI {
     allBuyButtons.forEach(item=>{
     item.addEventListener('click',(eo)=>{
         item.setAttribute("disabled","");
-        item.innerText ="DONE";
+        // item.innerText ="DONE";
         let id=item.dataset.id;
        let cartItem= {...Storage.getProduct(id),amount:1};
        cart = [...cart,cartItem];
