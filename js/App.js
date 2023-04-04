@@ -116,7 +116,7 @@ displayCart(cart){
         <p>Total price</p>
         <div class="total-price">0$</div>
       </div>
-      <button style="color:white;background-color:red;padding:15px; border-radius:15px;cursor:pointer;margin-left:10px"><a href="checkout.html" >Purshase</a></button>
+      <a href="checkout.html" ><button style="color:white;background-color:red;padding:15px; border-radius:15px;cursor:pointer;margin-left:10px">Purshase</button></a>
       </article>
       <button class="btn-prim">Clear All</button>
     `
