@@ -331,4 +331,7 @@ margin: 4px 0 1px 0;
   }
 }
 
-
+a{
+  text-decoration:none;
+  color:white;
+}

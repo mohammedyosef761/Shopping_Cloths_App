@@ -3,7 +3,7 @@
   const cartItems = document.querySelector('.cart-items');
 
   const BlackScreen =document.querySelector('.black-screen');
-
+  const loginLogout = document.querySelector('#logout');
    let totalPrice ;
 
  
@@ -116,7 +116,7 @@ displayCart(cart){
         <p>Total price</p>
         <div class="total-price">0$</div>
       </div>
-      <button style="color:white;background-color:red;padding:15px; border-radius:15px;cursor:pointer;margin-left:10px">Purshase</button>
+      <button style="color:white;background-color:red;padding:15px; border-radius:15px;cursor:pointer;margin-left:10px"><a href="checkout.html" >Purshase</a></button>
       </article>
       <button class="btn-prim">Clear All</button>
     `
@@ -270,7 +270,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const ui = new UI();
     const products = new Products();
 
-
+    if(localStorage.getItem("username")){
+      loginLogout.innerHTML = localStorage.getItem("username")
+    }
 
     // get all prpducts
     products.getProducts().then(products=>{ 
