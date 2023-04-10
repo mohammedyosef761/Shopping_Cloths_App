@@ -47,11 +47,12 @@ class UI {
       //listener to the button and added to the cart
 
    const allBuyButtons =document.querySelectorAll('.bag-btn');  
-    console.log(allBuyButtons);
+    // console.log(allBuyButtons);
     allBuyButtons.forEach(item=>{
     item.addEventListener('click',(eo)=>{
-        item.setAttribute("disabled","");
-        // item.innerText ="DONE";
+        // item.setAttribute("disabled",true);
+        // console.log("hereeeeee")
+        item.innerText ="DONE";
         let id=item.dataset.id;
        let cartItem= {...Storage.getProduct(id),amount:1};
        cart = [...cart,cartItem];
@@ -185,6 +186,20 @@ else if(eo.target.classList.contains('btn-secondary')){
    console.log(id);
    console.log("cart",cart);
    cart =cart.filter(item=> item.id !==id);
+   const allBuyButtons =document.querySelectorAll('.bag-btn');  
+   console.log(allBuyButtons);
+   
+   allBuyButtons.forEach((item=>{
+    console.log("item",item)
+    console.log("data_id",item?.dataset?.id)
+    if(item?.dataset?.id ==id){
+      item.innerText ="Add To Bag";
+      console.log("yes added",item)
+      // item.setAttribute("disabled",false);
+    }
+   }))
+
+
    console.log("cart after",cart)
    objUi.price(cart);
    objUi.displayCart(cart);
