@@ -75,3 +75,8 @@ outline:0;
 .section-form form input[type=submit]:hover{
     opacity: 0.8;
 }
+@media screen and (max-width:1000px) {
+.register-title{
+  display: none;
+}
+}
